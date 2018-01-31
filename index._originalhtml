@@ -64,21 +64,35 @@
 
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=1024"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <title>Happy Mole presentation deck</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
 
-    <meta name="description"
-          content="Happy Mole presentation deck"/>
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
 
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic"
-          rel="stylesheet"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
-    <link href="css/impress-demo.css" rel="stylesheet"/>
+    <!--
+        
+        Impress.js doesn't depend on any external stylesheets. It adds all of the styles it needs for the
+        presentation to work.
+        
+        This style below contains styles only for demo presentation. Browse it to see how impress.js
+        classes are used to style presentation steps, or how to apply fallback styles, but I don't want
+        you to use them directly in your presentation.
+        
+        Be creative, build your own. We don't really want all impress.js presentations to look the same,
+        do we?
+        
+        When creating your own presentation get rid of this file. Start from scratch, it's fun!
+        
+    -->
+    <link href="css/impress-demo.css" rel="stylesheet" />
 
-    <link rel="shortcut icon" href="favicon.png"/>
-    <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
 
 <!--
@@ -105,8 +119,7 @@
     For example this fallback message is only visible when there is `impress-not-supported` class on body.
 -->
 <div class="fallback-message">
-    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified
-        version of this presentation.</p>
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
     <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
 </div>
 
@@ -135,9 +148,9 @@
     to next slide after a timeout expires.
     
 -->
-<div id="impress">
+<div id="impress" data-autoplay="7">
 
-    <!--data-autoplay="7"
+    <!--
         
         Here is where interesting thing start to happen.
         
@@ -157,9 +170,9 @@
         Plugins: For first slide, set the autoplay time to a custom 10 seconds.
         
     -->
-    <!--<div id="bored" class="step slide" data-x="-1000" data-y="-1500" data-autoplay="10">
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500" data-autoplay="10">
         <q>Aren’t you just <b>bored</b> with all those slides-based presentations?</q>
-    </div>-->
+    </div>
 
     <!--
         
@@ -176,15 +189,13 @@
         Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
         
     -->
-    <!--<div class="step slide" data-x="0" data-y="-1500">
-        <q>Don’t you think that presentations given <strong>in modern browsers</strong> shouldn’t <strong>copy the
-            limits</strong> of ‘classic’ slide decks?</q>
+    <div class="step slide" data-x="0" data-y="-1500">
+        <q>Don’t you think that presentations given <strong>in modern browsers</strong> shouldn’t <strong>copy the limits</strong> of ‘classic’ slide decks?</q>
     </div>
 
     <div class="step slide" data-x="1000" data-y="-1500">
-        <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your
-            talk?</q>
-    </div>-->
+        <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
+    </div>
 
     <!--
         
@@ -197,9 +208,9 @@
         
     -->
     <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-        <span class="try">use the power of voice</span>
-        <h1>Happy&nbsp;Mole</h1>
-        <span class="footnote"><sup>*</sup> powered by passionate people</span>
+        <span class="try">then you should try</span>
+        <h1>impress.js<sup>*</sup></h1>
+        <span class="footnote"><sup>*</sup> no rhyme intended</span>
     </div>
 
     <!--
@@ -210,51 +221,27 @@
         element should be rotated by 90 degrees clockwise.
         
     -->
-
-    <div id="its" class="step" data-x="0" data-y="3000" data-rotate="90" data-scale="3">
-        <p>
-            The Department of Justice published the <strong>Americans with Disabilities Act (ADA)</strong> Standards for
-            Accessible Design in September 2010.<br/><br/>
-            These standards state that all electronic and information technology must be accessible to <strong>people
-            with disabilities.</strong>
-        </p>
-    </div>
-
-    <div id="its1" class="step" data-x="8500" data-y="2100" data-rotate="180" data-scale="4">
-        <p><!--It’s a <strong>presentation tool</strong> <br/>
+    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <p>It’s a <strong>presentation tool</strong> <br/>
         inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br/>
-        and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.-->
-            The traditional <strong>Americans with Disabilities Act (ADA) compliance</strong> solution has been for
-            those suffering from low vision to adapt to existing technology.<br/>
-            The vast majority of tech companies are making <strong>low vision users</strong> swipe their fingers across
-            a screen and listen to a robotic voice describing all the elements of the page.
-        </p>
+        and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
     </div>
 
     <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-        <p><span class="thoughts">thinking</span><b>big</b></p>
+        <p>visualize your <b>big</b> <span class="thoughts">thoughts</span></p>
     </div>
 
-    <!-- The traditional <strong>ADA compliance</strong> solution has been for those
-            suffering from low vision to adapt to existing technology.<br/>
-            Rather than improving the way we interact with today’s technology, the vast majority of tech companies are
-            making users swipe their fingers across a screen and listen to a robotic voice describing all the elements
-            of the page. -->
-
     <!--
-
+        
         And now it gets really exciting! We move into third dimension!
-
+        
         Along with `data-x` and `data-y`, you can define the position on third (Z) axis, with
         `data-z`. In the example below we use `data-z="-3000"` meaning that element should be
         positioned far away from us (by 3000px).
-
+        
     -->
     <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-        <p>With the modern technology capabilities that include <b>natural language processing</b>, information
-            extraction, and
-            speech recognition, accessing information should be a fluid, <b>instinctive process</b>.
-        </p>
+        <p>and <b>tiny</b> ideas</p>
     </div>
 
     <!--
@@ -282,62 +269,38 @@
         
     -->
     <div id="ing" class="step" data-x="3500" data-y="-850" data-z="0" data-rotate="270" data-scale="6">
-        <!--<p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b
-                class="scaling">scaling</b> them on an infinite canvas</p>-->
-
-        <p>We believe that ADA compliance will come to incorporate <b class="positioning">talking</b> to the online
-            solutions like <b class="rotating">web sites</b>,
-            applications with <b class="scaling">natural speech</b>.</p>
+        <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
     </div>
 
-    <div id="imagination" class="step" data-x="6700" data-y="-300" data-rotate="0" data-scale="6">
-        <!--<p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>-->
-        <p> It is the most essential way to communicate with
-            electronic devices — not just for those affected by <b class="positioning">low vision</b>, <b
-                    class="rotating">senior people</b>, but for <b>all humans</b>.</p>
+    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
+        <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
     </div>
 
-    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="2">
+    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
         <p>want to know more?</p>
-        <q>Introducing <a href="http://happymole.io">Happy&nbsp;Mole</a>!</q>
+        <q><a href="http://github.com/impress/impress.js">use the source</a>, Luke!</q>
     </div>
 
     <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p style="text-align: center"><b>Happy&nbsp;Mole</b> allows users to perform interactions with your website with
-            <b>voice</b>.</p>
+        <p>one more thing...</p>
     </div>
 
-    <div id="its-in-3d" class="step" data-x="200" data-y="4400" data-z="-100" data-rotate-x="-40" data-rotate-y="10"
-         data-scale="2">
-        <p>Key features * </p>
+    <!--
+        
+        And the last one shows full power and flexibility of impress.js.
+        
+        You can not only position element in 3D, but also rotate it around any axis.
+        So this one here will get rotated by -40 degrees (40 degrees anticlockwise) around X axis and
+        10 degrees (clockwise) around Y axis.
+        
+        You can of course rotate it around Z axis with `data-rotate-z` - it has exactly the same effect
+        as `data-rotate` (these two are basically aliases).
+        
+    -->
+    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it’s</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
+        <span class="footnote">* beat that, prezi ;)</span>
     </div>
-
-    <div id="its-in-4d" class="step" data-x="200" data-y="5000" data-z="-100" data-rotate-x="40" data-rotate-y="10"
-         data-scale="2">
-        <p><span class="have">It provides ability for <b>low vision</b> and <b>senior</b> users to interact with online web sites</span>
-        </p>
-    </div>
-
-    <div id="its-in-5d" class="step" data-x="200" data-y="5600" data-z="-100" data-rotate-x="-10" data-rotate-y="10"
-         data-scale="2">
-        <p><span class="have">Provides ability to navigate over the site by <b>voice</b></span></p>
-    </div>
-
-    <div id="its-in-6d" class="step" data-x="200" data-y="6200" data-z="-100" data-rotate-x="10" data-rotate-y="10"
-         data-scale="2">
-        <p><span class="have">Gives user <b>hints</b> about performed actions</span></p>
-    </div>
-
-    <div id="its-in-7d" class="step" data-x="200" data-y="6800" data-z="-100" data-rotate-x="-10" data-rotate-y="10"
-         data-scale="2">
-        <p><span class="have">Provides ability to <b>search</b> elements by voice</span></p>
-    </div>
-
-    <div id="its-in-8d" class="step" data-x="200" data-y="7400" data-z="-100" data-rotate-x="10" data-rotate-y="10"
-         data-scale="2">
-        <p><span class="have">Provides ability to <b>click</b> on element by voice</span></p>
-    </div>
-
 
     <!--
         
@@ -354,7 +317,7 @@
         CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
         
     -->
-    <div id="overview" class="step" data-x="4000" data-y="1500" data-z="0" data-scale="10">
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10">
     </div>
 
 </div>
@@ -392,12 +355,12 @@
 -->
 <div class="hint">
     <p>Use a spacebar or arrow keys to navigate. <br/>
-        Press 'P' to launch speaker console.</p>
+       Press 'P' to launch speaker console.</p>
 </div>
 <script>
-    if ("ontouchstart" in document.documentElement) {
-        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
-    }
+if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+}
 </script>
 
 <!--
