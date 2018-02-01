@@ -1,0 +1,321 @@
+.step.custom {
+    width:1100px;
+}
+
+.step.custom {
+    font-family: 'Open Sans', sans-serif;
+}
+.step.custom p {
+    font-size:24px;
+    margin-bottom:20px;
+}
+
+.step.custom img {
+    opacity:0;
+    width:100%;
+    animation: fade 1s;
+}
+.step.custom.present img {
+    opacity:1;
+    animation: appear 1s;
+}
+.step.custom ul {
+    list-style-type: disc;
+    font-size: 20px;
+    padding-left: 40px;
+}
+.step ul li {
+    opacity:0;
+    animation:fade 1s;
+    margin-bottom:10px;
+}
+.step.present ul li {
+    opacity:1;
+}
+.step.present ul li:nth-child(1) {
+    animation: appearDelay 1s;
+}
+.step.present ul li:nth-child(2) {
+    animation: appearDelay 1.2s;
+}
+.step.present ul li:nth-child(3) {
+    animation: appearDelay 1.4s;
+}
+.step.present ul li:nth-child(4) {
+    animation: appearDelay 1.6s;
+}
+.step.present ul li:nth-child(5) {
+    animation: appearDelay 1.8s;
+}
+.step.present ul li:nth-child(6) {
+    animation: appearDelay 2s;
+}
+.step.present ul li:nth-child(7) {
+    animation: appearDelay 2.2s;
+}
+.step.present ul li:nth-child(8) {
+    animation: appearDelay 2.4s;
+}
+.step.present ul li:nth-child(9) {
+    animation: appearDelay 2.6s;
+}
+.step.present ul li:nth-child(10) {
+    animation: appearDelay 2.8s;    
+}
+
+.step.custom h1 {
+    margin-bottom:30px;
+}
+#problem .then, #problem .so-on, #problem .solution {
+    opacity:0;
+    animation: fade 1s;
+}
+#problem .solution {
+    opacity:0;
+    font-size:26px;
+    animation: fade 1s;
+}
+#problem.present .then, #problem.present .so-on, #problem.present .solution {
+    opacity:1;
+}
+#problem.present .then {
+    animation: appearDelay 6s;
+}
+#problem.present .solution {
+    animation: appearDelay 7s;
+}
+#problem.present .so-on {
+    animation: appearDelay 8s;
+}
+
+#solution * {
+    opacity:0;
+    animation: fade 1s;
+}
+#solution.present * {
+    opacity: 1;
+}
+#solution.present .solution {
+    animation: appearDelay 1s;
+}
+#solution.present .voice {
+    animation: appearDelay 3s;
+}
+#solution.present p {
+    animation: appearDelay 5s;
+}
+
+#how-it-works, #why, #how-to-integrate, #team, #contact {
+    opacity:0;
+    animation: fade 1s;
+}
+
+#how-it-works.present, #why.present, #how-to-integrate.present, #team.present, #contact.present {
+    opacity:1;
+    animation: appearDelay 1.5s;
+}
+
+#why ul li:nth-child(1) {
+    animation-duration: 2s;
+}
+#why ul li:nth-child(2) {
+    animation-duration: 3s;
+}
+#why ul li:nth-child(3) {
+    animation-duration: 4s;
+}
+#why ul li:nth-child(4) {
+    animation-duration: 5s;
+}
+#why ul li:nth-child(5) {
+    animation-duration: 6s;
+}
+#team h1 {
+    text-align: center;
+}
+#team .row {
+    position:relative;
+    text-align:center;
+    font-size:0;
+}
+#team .row .col {
+    display: inline-block;
+    width:calc(100% / 3);
+    font-size:24px;
+    text-align: center;
+}
+#team .row .col img {
+    width: 140px;
+    display: inline-block;
+}
+#team .row .col p {
+    margin-bottom:0;
+}
+#team .row .col p + span {
+    font-size:20px;
+    font-weight:300;
+}
+
+#introducing span{
+    font-size: 60px;
+    opacity:0;
+    transition:1s;
+}
+
+#introducing.present span{
+    opacity:1;
+}
+
+#introducing b {
+    font-size: 180px;
+    display: block;
+    color:transparent;
+    line-height: 220px;
+    position: relative;
+    animation: introducingOut 1s;
+}
+
+#introducing b:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:-1;
+    background-image: url(http://happymole.io/76c0128599fe61afb0ea0c17b902bbf3.png);
+    background-size: contain;
+    background-position: calc(0% + 100px) 0;
+    background-repeat: no-repeat;
+    transform:rotateY(180deg);
+    opacity:0;
+    animation: 1s moleFade;
+}
+#introducing.present b {
+    color:black;
+    line-height: 190px;
+    animation:introducingIn 1.5s;
+}
+
+#introducing.present b:after {
+    opacity:1;
+    animation: moleAppear 2s ease-out;   
+}
+
+#overview {
+    opacity:0;
+    animation:fade 2s;
+    text-align: center;
+}
+
+#overview.present {
+    opacity:1;
+    animation:appear 1s;
+}
+
+
+@keyframes appearDelay {
+    0% {
+        opacity:0
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@keyframes fadeDelay {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+@keyframes solutionAppear {
+    0% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+        transform: translateX(-180px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes introducingIn {
+    0% {
+        color:transparent;
+        line-height: 220px;
+    }
+    100% {
+        color:black;
+        line-height: 190px;
+    }
+}
+@keyframes introducingOut {
+    0% {
+        color:black;
+        line-height: 190px;
+    }
+    100% {
+        color:transparent;
+        line-height: 220px;
+    }
+}
+
+@keyframes moleAppear {
+    0% {
+        opacity:0;
+        background-position:calc(0% - 100px) 0;
+    }
+    50% {
+        opacity:0;
+        background-position:calc(0% - 100px) 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;;
+        background-position: calc(0% + 100px) 0;
+    }
+}
+@keyframes moleFade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
