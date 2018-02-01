@@ -91,6 +91,7 @@
 #solution * {
     opacity:0;
     animation: fade 1s;
+    text-align: center;
 }
 #solution.present * {
     opacity: 1;
